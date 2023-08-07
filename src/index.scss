@@ -1,0 +1,14 @@
+// General
+@use "./settings";
+// Pages
+@use "./styles/pages/home";
+@use "./styles/pages/error";
+// Components layout
+@use "./styles/components/layout/burgerMenu";
+@use "./styles/components/layout/header";
+@use "./styles/components/layout/footer";
+// Components
+@use "./styles/components/profil";
+@use "./styles/components/projects";
+@use "./styles/components/skills";
+@use "./styles/components/contact";

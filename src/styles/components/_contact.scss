@@ -1,0 +1,72 @@
+@import "../../settings";
+
+.container-contact {
+    
+    @include display;
+    width: 100%;
+    padding: 4rem 0 0;
+    background: var(--backgroundLight);
+    clip-path: circle(290px at 50% 50%);
+
+    @media(min-width: 1023px){
+        clip-path: circle(750px at 50% 130%);
+    }
+
+    h2{
+        margin-bottom: 4rem;
+        color: var(--goldenrod);
+    }
+
+    &--linkedin,
+    &--email{
+        @include display;
+        margin: 2rem 0;
+
+        p{
+            margin-bottom: 2rem;
+            font-size: 1.2rem;
+            text-align: center;
+            color: var(--black);
+        }
+
+        &-icon{
+
+            @media (min-width: 901px){
+                
+                &:hover{
+                    transform: scale(1.1);
+                }
+            }
+        }
+
+        @media (min-width: 501px){
+
+            p{
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+    &--linkedin{
+        
+        &-icon{
+            font-size: 3.5rem;
+            color: #0270AD;
+            background: var(--white);
+            border-radius: 6px;
+        }
+    }
+
+    &--email {
+        
+        a{
+            color: #0270AD;
+            text-decoration: none;
+        }
+
+        &-icon{
+            font-size: 4rem;
+            border-radius: 6px;
+        }
+    }
+}
