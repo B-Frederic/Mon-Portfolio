@@ -1,4 +1,4 @@
-import cvDesktop from "../CV/CV Frédéric bétaouaf.pdf";
-import cvImp from "../CV/CV Frédéric bétaouaf imprimable.pdf";
+import cvDesktop from "../CV/CV_Frederic_Betaouaf.pdf";
+import cvImp from "../CV/CV_Frederic_Betaouaf_imprimable.pdf";
 
 export {cvDesktop, cvImp}
