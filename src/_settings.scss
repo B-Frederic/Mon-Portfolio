@@ -43,3 +43,23 @@ a{
 .background-dark{
     background: var(--background);
 }
+
+.toTop {
+    position: fixed;
+    bottom: 2.5rem;
+    right: 0.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    color: var(--goldenrod);
+    background: var(--black);
+    opacity: 0.8;
+
+    @media(min-width: 901px){
+        display: none;
+    }
+}
