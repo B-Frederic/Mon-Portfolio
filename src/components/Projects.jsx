@@ -112,14 +112,19 @@ const Projects = () => {
                   </div>
                   <img src={element.img} alt={element.alt} aria-label={element.alt} width={350} height={330}></img>
                   <div className="container-projects--box-card-social">
-                    <Link
-                      to={element.view}
-                      target="_blank"
-                      aria-label="Voir le projet"
-                      className="container-projects--box-card-social-link"
-                    >
-                      <FaEye />
-                    </Link>
+                    {
+                      element.title !== "Portfolio" && (
+                        <Link
+                          to={element.view}
+                          target="_blank"
+                          aria-label="Voir le projet"
+                          className="container-projects--box-card-social-link"
+                        >
+                          <FaEye />
+                        </Link>
+                      )
+                    }
+
                     <Link
                       to={element.code}
                       aria-label="Voir le code"
