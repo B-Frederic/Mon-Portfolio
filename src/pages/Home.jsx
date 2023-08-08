@@ -35,8 +35,6 @@ const Home = () => {
 
   }, [scrollTop]);
 
-  console.log(screen.width);
-
     return (
         <div>
             <Cursor />
