@@ -10,9 +10,7 @@ const Profil = () => {
         <div className="background-dark" id="profil">
             <div className="container-profil">
                 <motion.div
-                animate={{
-                    scale: [1 , 1.05, 1]
-                }}
+                animate={ screen.width > 900 ? {scale: [1 , 1.05, 1]} : ""}
                 transition={{
                     duration: "6",
                     ease: "easeInOut",
@@ -22,9 +20,10 @@ const Profil = () => {
                     <img src={moi} alt="photo du créateur du portfolio" />
                 </motion.div>
                 <div className="container-profil--text">
+
                     <motion.p
-                    initial={{x: -100, opacity: "0"}}
-                    whileInView={{x: 0, opacity: 1}}
+                    initial={ screen.width > 900 ? {x: -100, opacity: "0"} : ""}
+                    whileInView={ screen.width > 900 ? {x: 0, opacity: 1} : ""}
                     viewport={{ once: true }}
                     transition={{duration: "1.5", delay: "0"}}
                     >
@@ -32,8 +31,8 @@ const Profil = () => {
                     </motion.p>
 
                     <motion.p
-                    initial={{x: -100, opacity: "0"}}
-                    whileInView={{x: 0, opacity: 1}}
+                    initial={ screen.width > 900 ? {x: -100, opacity: "0"} : ""}
+                    whileInView={ screen.width > 900 ? {x: 0, opacity: 1} : ""}
                     viewport={{ once: true }}
                     transition={{duration: "1.5", delay: "0.2"}}
                     >
@@ -43,8 +42,8 @@ const Profil = () => {
                     </motion.p>
 
                     <motion.div
-                    initial={{x: -100, opacity: "0"}}
-                    whileInView={{x: 0, opacity: 1}}
+                    initial={ screen.width > 900 ? {x: -100, opacity: "0"} : ""}
+                    whileInView={ screen.width > 900 ? {x: 0, opacity: 1} : ""}
                     viewport={{ once: true }}
                     transition={{duration: "1.5", delay: "0.4"}}
                     >
@@ -58,8 +57,8 @@ const Profil = () => {
                     </motion.div>
 
                     <motion.div
-                    initial={{x: -100, opacity: "0"}}
-                    whileInView={{x: 0, opacity: 1}}
+                    initial={ screen.width > 900 ? {x: -100, opacity: "0"} : ""}
+                    whileInView={ screen.width > 900 ? {x: 0, opacity: 1} : ""}
                     viewport={{ once: true }}
                     transition={{duration: "1.5", delay: "0.6"}}
                     >

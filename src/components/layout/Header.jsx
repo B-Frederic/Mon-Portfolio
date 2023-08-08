@@ -32,14 +32,10 @@ const Header = () => {
                     </ul>
                 </nav>
             </div>
-            <motion.div 
-            className="container-header--menu-burger"
-            initial={{rotateY: 360}}
-            animate={{rotateY: 0}}
-            transition={{duration: "2"}}
-            >
+            <div 
+            className="container-header--menu-burger">
                 <RxHamburgerMenu onClick={handleBurgerMenu} />
-            </motion.div>
+            </div>
             {burgerMenu && <BurgerMenu setBurgerMenu={setBurgerMenu} />}
         </div>
     );
