@@ -96,7 +96,7 @@ const Skills = () => {
           viewport={{ once: true }}
           transition={{duration: "2"}}
           >
-            <img src={cv} alt="curriculum vitae" width={830} height={1080}/>
+            <img src={cv} alt="curriculum vitae"/>
           </motion.div>
           <div className="container-skills--box-cv-button">
             <div>

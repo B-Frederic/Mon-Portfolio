@@ -19,7 +19,7 @@ const Profil = () => {
                     repeat: Infinity,
                 }}
                 className="container-profil--picture">
-                    <img src={moi} alt="photo du créateur du portfolio" width={300} height={400} />
+                    <img src={moi} alt="photo du créateur du portfolio" />
                 </motion.div>
                 <div className="container-profil--text">
                     <motion.p
