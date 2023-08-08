@@ -103,7 +103,7 @@ const dataProjects = [
     },
     {
         title: "Voyage",
-        tag: "Vitrine",
+        tag: "Intégration",
         img: `${voyage}`,
         alt: "photo du site Voyage",
         front: "react",
