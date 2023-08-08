@@ -12,6 +12,8 @@ import { motion } from "framer-motion";
 import { IoIosArrowUp } from "react-icons/io"
 // Video
 import video from "../assets/video/mercury.mp4"
+import videoMobile from "../assets/video/mercury_mobile.mp4"
+import Cursor from "../components/utils/Cursor";
 
 
 const Home = () => {
@@ -33,12 +35,17 @@ const Home = () => {
 
   }, [scrollTop]);
 
+  console.log(screen.width);
 
     return (
         <div>
+            <Cursor />
             <Header />
             <div className="container-home" id="home">
-                <video src={video} autoPlay muted loop></video>
+                {
+                    screen.width > 900 ? (<video src={video} autoPlay muted loop></video>) : (<video src={videoMobile} autoPlay muted loop></video>)
+                }
+                
                 <motion.div
                 initial={{scale: 0, opacity: 0}}
                 animate={{scale: 1, opacity: 1}}
