@@ -26,7 +26,7 @@ const Header = () => {
                         {
                             data.map((element, index) => (
                                 
-                                <a key={index} href={element.link}><li>{element.name}</li></a>
+                                <li key={index}><a href={element.link}>{element.name}</a></li>
                             ))
                         }
                     </ul>

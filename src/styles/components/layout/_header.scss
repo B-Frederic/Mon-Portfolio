@@ -26,12 +26,13 @@
             li{
                 margin: 0px 20px;
                 border-radius: 1.5rem;
-                color: var(--goldenrod);
+                
+                a{
+                    color: var(--goldenrod);
+                    text-decoration: none;
+                }
             }
             
-            a{
-                text-decoration: none;
-            }
         }
     }
 

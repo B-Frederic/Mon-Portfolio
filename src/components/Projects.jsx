@@ -54,7 +54,6 @@ const Projects = () => {
   let screenWidth = screen.width; 
   const card = document.querySelectorAll(".container-projects--box-card")
 
-
   card.forEach((el) => {
 
     if(screenWidth > 900){
@@ -62,13 +61,10 @@ const Projects = () => {
       el.addEventListener("mousemove", (e) => {
 
         let elRect = el.getBoundingClientRect();
-
         let x = e.clientX - elRect.x;
         let y = e.clientY - elRect.y;
-
         let midCardWidth = elRect.width / 2;
         let midCardHeight = elRect.height / 2;
-
         let angleY = -(x - midCardWidth) / 14;
         let angleX = (y - midCardHeight) / 14;
 
@@ -114,17 +110,19 @@ const Projects = () => {
                   <div className="container-projects--box-card-responsive">
                     <p>{element.responsive}</p>
                   </div>
-                  <img src={element.img} alt={element.alt}></img>
+                  <img src={element.img} alt={element.alt} aria-label={element.alt} width={350} height={330}></img>
                   <div className="container-projects--box-card-social">
                     <Link
                       to={element.view}
                       target="_blank"
+                      aria-label="Voir le projet"
                       className="container-projects--box-card-social-link"
                     >
                       <FaEye />
                     </Link>
                     <Link
                       to={element.code}
+                      aria-label="Voir le code"
                       target="_blank"
                       className="container-projects--box-card-social-link"
                       >

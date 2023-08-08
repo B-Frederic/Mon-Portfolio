@@ -26,7 +26,9 @@ const Contact = () => {
                     }}
                     whileInView={{x: 0, opacity: 1}}
                     >
-                        <Link to="https://www.linkedin.com/in/frederic-betaouaf/" target="_blank"><BsLinkedin className="container-contact--linkedin-icon" /></Link>
+                        <Link to="https://www.linkedin.com/in/frederic-betaouaf/" target="_blank" aria-label="Allez sur mon Linkedin">
+                            <BsLinkedin className="container-contact--linkedin-icon" />
+                        </Link>
                     </motion.div>
                 </div>
                 <div className="container-contact--email">
@@ -43,7 +45,9 @@ const Contact = () => {
                     }}
                     className="container-contact--email-icon"
                     >
-                        <Link to="mailto:frederic.betaouaf33@gmail.com" target="_blank"><TbMail /></Link>
+                        <Link to="mailto:frederic.betaouaf33@gmail.com" target="_blank" aria-label="M'envoyez un email">
+                            <TbMail />
+                        </Link>
                     </motion.div>
                 </div>
             </div>

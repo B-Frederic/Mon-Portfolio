@@ -96,8 +96,8 @@
             }
 
             h2 {
-                font-size: 2rem;
                 padding: 0.8rem;
+                font-size: 2rem;
                 color: var(--goldenrod);
                 border-bottom: 1px solid var(--goldenrod);
 
@@ -114,7 +114,8 @@
                 font-weight: bold;
                 color: var(--white);
                 border-radius: 1.5rem;
-                background: #a09e9e;
+                // background: #a09e9e;
+                background: #222;
             }
 
             img {
